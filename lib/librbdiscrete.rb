@@ -5,6 +5,7 @@ require 'yaml'
 
 EVALUE = 2.718281828459045235360287471352662497757247093
 PIVALUE = 3.141592653589793238462643383279502884197169399
+MAX_INTEGER = 1073741823
 
 err = "An error occured during during procedure"
 
@@ -20,7 +21,7 @@ factorial(n)
 Iterative factorial definition
 =end
 def factorial( n )
-    if n <= 1
+    if (n <= 1)
         return 1
     else
         return n*factorial( n-1 ).to_i
@@ -78,21 +79,19 @@ Subset Procedure v1.1.3
 = SYNOPSIS
 subset(gen, zerosbst)
 'zerosbst' variable, decision mechanism of zero subset is included or not included
-'gen' is the 
+'gen' is the general mass elements(objects) number
 
 = DESCRIPTION
 Calculate subset number of input arguments
 =end
 def subset(gen, zerosbst)
     main = case (zerosbst)
-    when zerosbst == 'y'
+    when zerosbst == true
             rslt = ui_pow(2, gen) - 1
             return rslt
-    when zerosbst == 'n'
+    when zerosbst == false
             rslt = ui_pow(2, gen)
             return rslt
-    else
-            puts "Enter 'y' or 'n' char"
     end
     return main
 end
@@ -247,7 +246,7 @@ Additive recursive definition of Fibonacci
 def fib(n)
     if (n <= 1) 
         return n;
-    elsif 
+    else
         return fib(n-1)+fib(n-2);
     end
 end
@@ -286,11 +285,11 @@ end
 Binary Search Spec. Procedure v1.5.9
 
 = SYNOPSIS
-binary_search(binary, size, searchKey, low, middle, high)
+binary_search(binary, size, search_key, low, middle, high)
 == Binary search
 *binary => array
 *size => binary array's size
-*searchKey => Compare string
+*search_key => Compare string
 *General values
   *low => low value representation
   *middle => middle value representation
@@ -299,13 +298,13 @@ binary_search(binary, size, searchKey, low, middle, high)
 = DESCRIPTION
 Binary search
 =end
-def binary_search(binary, size, searchKey, low, middle, high)
+def binary_search(binary, size, search_key, low, middle, high)
     while (low <= high)
         middle=(low+high)/2;
         print_row(binary, size, low, middle, high);
-        if (searchKey == binary[middle])
+        if (search_key == binary[middle])
             return middle;
-        elsif (searchKey <= binary[middle])
+        elsif (search_key <= binary[middle])
             high=middle-1
         else 
             low=middle+1
@@ -351,7 +350,7 @@ sum_of_fib(n)
 Basic reps
 
 = DESCRIPTION
-Bird's Eye View Procedure
+Fibonacci Sum Procedure
 =end
 def sum_of_fib(n)
    return fib(n+2)-1;
@@ -375,18 +374,18 @@ Is Prime Procedure
 =end
 def is_prime(nb)
     test = count = 0
-    if (nb != 1)
+    if (nb == 1)
         return -1
     end
     for i in 2..nb-1
         count++
         if (nb % i == 0)
-            test = 1
+            test = false
         end
     end
     if (!test)
         return 1
-    elsif
+    else
         return 0
     end
 end
@@ -404,9 +403,34 @@ Fermat Little Theorem's Procedural Representation
 (('WARNING'))((-Modular representation maybe couldn't evaluated-))
 =end
 def fermat_little(p, a)
+  begin
     if(p%(ui_pow(a, (p-1))-1) == 0)
         return 0
-    elsif
+    else
         return 1
     end
+  end
+rescue
+  begin
+    ArgumentError.new("High load. Terminated.")
+  end
+end
+
+=begin
+= NAME
+to_bool v.0.0.1
+
+=SYNOPSIS
+to_bool(void)
+=DESCRIPTION
+to bool is convert integer valus to string boolean
+=end
+def to_bool
+  if (self.to_bool == 1)
+    puts "TRUE"
+  elsif (self.to_bool == 0)
+    puts "FALSE"
+  elsif (self.to_bool == -1)
+    puts "NaN"
+  end
 end

@@ -8,15 +8,14 @@ require 'rake/testtask'
 
 spec = Gem::Specification.new do |s|
   s.name = 'RubMat'
-  s.version = '2.1.5'
-  s.has_rdoc = true
-  s.extra_rdoc_files = ['README', 'LICENSE', 'gplv3.png', 'RubMat.png']
+  s.version = '2.1.6'
+  s.extra_rdoc_files = ['README.md', 'LICENSE', 'gplv3.png', 'RubMat.png']
   s.summary = 'Discrete Mathematics solver and Usable Library'
   s.description = s.summary
-  s.author = 'Matthew Manahan'
+  s.author = 'Mahmut Bulut'
   s.email = 'scienceblock@gmail.com'
-  # s.executables = ['your_executable_here']
-  s.files = %w(LICENSE README Rakefile gplv3.png RubMat.png) + Dir.glob("{bin,lib,spec}/**/*")
+  s.executables = ['rubmat.rb']
+  s.files = %w(LICENSE README.md Rakefile gplv3.png RubMat.png) + Dir.glob("{bin,lib,spec}/**/*")
   s.require_path = "lib"
   s.bindir = "bin"
   s.homepage = 'http://regularlambda.github.com/RubMat'
@@ -28,14 +27,14 @@ Rake::GemPackageTask.new(spec) do |p|
   p.need_zip = true
 end
 
-Rake::RDocTask.new do |rdoc|
-  files =['README', 'LICENSE', 'lib/**/*.rb', 'lib/**/*.yml']
-  rdoc.rdoc_files.add(files)
-  rdoc.main = "README" # page to start on
-  rdoc.title = "RubMat Docs"
-  rdoc.rdoc_dir = 'doc/rdoc' # rdoc output folder
-  rdoc.options << '--line-numbers'
-end
+#Rake::RDocTask.new do |rdoc|
+#  files =['README.md', 'LICENSE', 'lib/**/*.rb', 'lib/**/*.yml']
+#  rdoc.rdoc_files.add(files)
+#  rdoc.main = "README" # page to start on
+#  rdoc.title = "RubMat Docs"
+#  rdoc.rdoc_dir = 'doc/rdoc' # rdoc output folder
+#  rdoc.options << '--line-numbers'
+#end
 
 Rake::TestTask.new do |t|
   t.test_files = FileList['test/**/*.rb']
