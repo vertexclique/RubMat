@@ -8,10 +8,10 @@ Dir[File.dirname(__FILE__) + '/lib/*.rb'].each {|file| require file }
 #$LOAD_PATH.unshift File.dirname(__FILE__)
 #require File.dirname(__FILE__) + '/lib/librbdiscrete.rb'
 #require File.expand_path(File.join(File.dirname(__FILE__)))
-require 'librbdiscrete'
-require 'fixnumexpand'
-require 'commander'
-require 'help'
+#require 'librbdiscrete'
+#require 'fixnumexpand'
+#require 'commander'
+#require 'help'
 
 puts "===RubMat===
     Copyright (C) <2011>  <Mahmut Bulut>
