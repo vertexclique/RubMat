@@ -2,7 +2,6 @@
 
 # AUTHOR: Mahmut Bulut
 require 'rubygems'
-require 'yaml'
 require 'librbdiscrete.rb'
 require 'fixnumexpand.rb'
 require 'commander'
