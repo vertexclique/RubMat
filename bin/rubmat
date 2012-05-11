@@ -4,10 +4,7 @@
 require 'rubygems'
 require 'bundler/setup'
 
-require '/lib/librbdiscrete'
-require 'fixnumexpand'
 require 'commander'
-require 'help'
 
 puts "===RubMat===
     Copyright (C) <2011>  <Mahmut Bulut>
