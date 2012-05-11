@@ -6,12 +6,11 @@ require 'bundler/setup'
 
 #$LOAD_PATH.unshift File.dirname(__FILE__)
 #require File.dirname(__FILE__) + '/lib/librbdiscrete.rb'
-
-require File.expand_path(File.join(File.dirname(__FILE__)))
-require "lib/librbdiscrete"
-require "fixnumexpand.rb"
+#require File.expand_path(File.join(File.dirname(__FILE__)))
+require 'librbdiscrete'
+require 'fixnumexpand'
 require 'commander'
-require "help.rb"
+require 'help'
 
 puts "===RubMat===
     Copyright (C) <2011>  <Mahmut Bulut>
