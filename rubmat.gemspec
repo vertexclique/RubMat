@@ -1,6 +1,6 @@
 spec = Gem::Specification.new do |s|
   s.name = 'RubMat'
-  s.version = '2.2.0'
+  s.version = '2.2.2'
   s.extra_rdoc_files = ['README.md', 'LICENSE', 'gplv3.png', 'RubMat.png']
   s.summary = 'Discrete Mathematics solver and Usable Library'
   s.description = s.summary
@@ -11,4 +11,5 @@ spec = Gem::Specification.new do |s|
   s.require_path = "lib"
   s.bindir = "bin"
   s.homepage = 'http://regularlambda.github.com/RubMat'
+  s.add_dependency("commander", "~> 4.1.0")
 end
