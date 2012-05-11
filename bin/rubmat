@@ -4,7 +4,7 @@
 require 'rubygems'
 require 'bundler/setup'
 
-require File.dirname(__FILE__) + '/lib'
+require File.dirname(__FILE__) + '/'
 require "lib/librbdiscrete.rb"
 require "fixnumexpand.rb"
 require 'commander'
