@@ -1,4 +1,3 @@
-
 spec = Gem::Specification.new do |s|
   s.name = 'RubMat'
   s.version = '2.1.7'
