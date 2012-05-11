@@ -1,9 +1,6 @@
 #!/usr/bin/env ruby
 
 # AUTHOR: Mahmut Bulut
-require 'rubygems'
-require 'bundler/setup'
-
 #$LOAD_PATH.unshift File.dirname(__FILE__)
 #require File.dirname(__FILE__) + '/lib/librbdiscrete.rb'
 #require File.expand_path(File.join(File.dirname(__FILE__)))
