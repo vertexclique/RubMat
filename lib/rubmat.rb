@@ -2,11 +2,15 @@
 
 # AUTHOR: Mahmut Bulut
 require 'rubygems'
-require 'librbdiscrete.rb'
-require 'fixnumexpand.rb'
-require 'commander'
-require 'help'
+require 'bundler/setup'
 
+require 'commander'
+# AUTHOR: Mahmut Bulut
+class RubMat
+  def self.run
+    require 'librbdiscrete'
+    require 'fixnumexpand'
+    require 'help'
 puts "===RubMat===
     Copyright (C) <2011>  <Mahmut Bulut>
     This program comes with ABSOLUTELY NO WARRANTY; for details type 'help'.
@@ -121,3 +125,5 @@ command = ask(">=> ")
     puts ui_pow(base, exp)
   end
 end until(command == 'exit')
+end
+end

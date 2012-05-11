@@ -7,13 +7,15 @@ spec = Gem::Specification.new do |s|
   s.author = 'Mahmut Bulut'
   s.email = 'scienceblock@gmail.com'
   s.executables = ['rubmat']
-  s.files = %w(LICENSE README.md Rakefile gplv3.png RubMat.png) + Dir.glob("{bin,lib,spec}/**/*")
-  s.require_path = "lib"
+  s.files = ["lib/fixnumexpand.rb",
+             "lib/help.rb",
+             "lib/librbdiscrete.rb",
+             "lib/main.rb"]
+  #%w(LICENSE README.md Rakefile gplv3.png RubMat.png) + Dir.glob("{bin,lib,spec}/**/*")
+  s.require_paths = ["lib"]
+  s.rubygems_version = "1.8.10"
   s.bindir = "bin"
-<<<<<<< HEAD
   s.homepage = 'http://regularlambda.github.com/RubMat'
   s.add_dependency("commander", "~> 4.1.0")
-=======
-  s.homepage = 'http://regularlambda.github.com/RubMat'zz
->>>>>>> d8ba02c562beb2677148de78b4dc2b2d4589fe21
+  s.homepage = 'http://regularlambda.github.com/RubMat'
 end
