@@ -11,4 +11,6 @@ spec = Gem::Specification.new do |s|
   s.require_path = "lib"
   s.bindir = "bin"
   s.homepage = 'http://regularlambda.github.com/RubMat'
+  
+  s.add_dependency('commander',   '~> 4.1.0')
 end
