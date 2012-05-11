@@ -268,7 +268,7 @@ Underly array for printing.
 def print_row(binary, size, low, mid, high)
     for i in 0..size-1
         if (i <low || i > high)
-            print (nil)
+            print "     "
         end
         if(i == mid)
             puts binary[i]
