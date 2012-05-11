@@ -2,7 +2,6 @@
 
 # AUTHOR: Matthew Manahan
 
-require 'yaml'
 require 'librbdiscrete.rb'
 require 'fixnumexpand.rb'
 

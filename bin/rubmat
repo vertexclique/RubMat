@@ -1,13 +1,13 @@
 #!/usr/bin/env ruby
 
-# AUTHOR: Mahmut Bulut
 require 'rubygems'
 require 'bundler/setup'
 
-require 'lib/librbdiscrete'
-require 'lib/fixnumexpand'
 require 'commander'
-require 'lib/help'
+require 'librbdiscrete'
+require 'fixnumexpand'
+require 'help'
+# AUTHOR: Mahmut Bulut
 
 puts "===RubMat===
     Copyright (C) <2011>  <Mahmut Bulut>

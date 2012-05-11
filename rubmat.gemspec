@@ -10,6 +10,10 @@ spec = Gem::Specification.new do |s|
   s.files = %w(LICENSE README.md Rakefile gplv3.png RubMat.png) + Dir.glob("{bin,lib,spec}/**/*")
   s.require_path = "lib"
   s.bindir = "bin"
+<<<<<<< HEAD
   s.homepage = 'http://regularlambda.github.com/RubMat'
   s.add_dependency("commander", "~> 4.1.0")
+=======
+  s.homepage = 'http://regularlambda.github.com/RubMat'zz
+>>>>>>> d8ba02c562beb2677148de78b4dc2b2d4589fe21
 end
