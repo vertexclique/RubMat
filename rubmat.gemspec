@@ -1,6 +1,6 @@
 spec = Gem::Specification.new do |s|
   s.name = 'RubMat'
-  s.version = '2.2.0'
+  s.version = '2.2.1'
   s.extra_rdoc_files = ['README.md', 'LICENSE', 'gplv3.png', 'RubMat.png']
   s.summary = 'Discrete Mathematics solver and Usable Library'
   s.description = s.summary
