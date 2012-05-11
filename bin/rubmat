@@ -4,7 +4,7 @@
 require 'rubygems'
 require 'bundler/setup'
 
-require "librbdiscrete.rb"
+require "lib/librbdiscrete.rb"
 require "fixnumexpand.rb"
 require 'commander'
 require "help.rb"
