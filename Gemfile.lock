@@ -1,0 +1,15 @@
+GEM
+  remote: http://rubygems.org/
+  remote: http://rubygems.org/
+  remote: http://rubygems.org/
+  remote: http://gemcutter.org/
+  specs:
+    commander (4.1.2)
+      highline (~> 1.6.11)
+    highline (1.6.12)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  commander
