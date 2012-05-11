@@ -5,5 +5,4 @@ source "http://gems.rubyforge.org"
 source :gemcutter
 source "http://gemcutter.org"
 
-gem "yaml"
 gem "commander"
