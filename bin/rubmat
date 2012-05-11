@@ -5,13 +5,13 @@ require 'bundler/setup'
 Dir[File.dirname(__FILE__) + '/lib/*.rb'].each {|file| require file }
 
 require 'commander'
+require 'librbdiscrete'
+require 'fixnumexpand'
+require 'help'
 # AUTHOR: Mahmut Bulut
 #$LOAD_PATH.unshift File.dirname(__FILE__)
 #require File.dirname(__FILE__) + '/lib/librbdiscrete.rb'
 #require File.expand_path(File.join(File.dirname(__FILE__)))
-#require 'librbdiscrete'
-#require 'fixnumexpand'
-#require 'help'
 
 puts "===RubMat===
     Copyright (C) <2011>  <Mahmut Bulut>
