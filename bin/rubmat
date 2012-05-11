@@ -6,7 +6,7 @@ require 'bundler/setup'
 
 $LOAD_PATH.unshift File.dirname(__FILE__)
 
-require File.dirname(__FILE__) + '/lib/librbdiscrete.rb'
+#require File.dirname(__FILE__) + '/lib/librbdiscrete.rb'
 require "lib/librbdiscrete.rb"
 require "fixnumexpand.rb"
 require 'commander'
