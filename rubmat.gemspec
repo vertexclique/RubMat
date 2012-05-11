@@ -6,7 +6,7 @@ spec = Gem::Specification.new do |s|
   s.description = s.summary
   s.author = 'Mahmut Bulut'
   s.email = 'scienceblock@gmail.com'
-  s.executables = ['rubmat']
+  s.default_executable = "rubmat"
   s.files = %w(LICENSE README.md Rakefile gplv3.png RubMat.png) + Dir.glob("{bin,lib,spec}/**/*") + 
   ["lib/fixnumexpand.rb", "lib/help.rb", "lib/librbdiscrete.rb", "lib/main.rb", "bin/rubmat"]
   s.require_paths = ["lib"]
