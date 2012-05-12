@@ -18,7 +18,7 @@ Jeweler::Tasks.new do |gem|
   gem.homepage = "http://github.com/regularlambda/RubMat"
   gem.license = "MIT"
   gem.summary = %Q{Discrete Mathematics REPL and built-in usable library}
-  gem.description = %Q{Discrete Mathematics REPL and built-in usable library for experimental and experimental projects}
+  gem.description = %Q{Discrete Mathematics REPL and built-in usable library for experimental projects}
   gem.email = "mahmutbulut0@gmail.com"
   gem.authors = ["Mahmut Bulut"]
   gem.add_dependency "commander", "~> 4.1.0"

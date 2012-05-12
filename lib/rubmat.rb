@@ -500,10 +500,9 @@ end
 
 def self.run
 puts "===RubMat===
-    Copyright (C) <2011>  <Mahmut Bulut>
-    This program comes with ABSOLUTELY NO WARRANTY; for details type 'help'.
-    This is free software, and you are welcome to redistribute it
-    under certain conditions; type `certain' for details."
+    Copyright (C) <2012>  <Mahmut Bulut>
+    Type `help' for commands list
+    and for distributing rules `certain'"
 puts ""
 begin
   command = ask(">=> ")
