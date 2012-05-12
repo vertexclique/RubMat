@@ -1,0 +1,5 @@
+#!/usr/bin/ruby
+$LOAD_PATH.unshift File.join(File.dirname(__FILE__), '..', 'lib', 'lib/rubmat')
+require 'rubmat'
+
+MathRub.run
