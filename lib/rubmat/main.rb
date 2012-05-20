@@ -39,8 +39,9 @@ begin
       middle = ask("Medium limit: ", Integer)
       high = ask("High limit: ", Integer)
       puts binary_search(binary, size, search_key, low, middle, high)
-      rescue => error
-        puts error
+      rescue Exception => ex
+        puts ex.message
+        retry
       end
     end
     if (command == 'birdseye')
@@ -72,7 +73,11 @@ begin
       puts fib(n)
     end
     if (command == 'isprime')
+      begin
       raise RuntimeError.new("Have some critical issues closed to next minor version")
+      rescue Exception => ex
+        puts ex.message
+      end
 #    nb = ask("Control number: ", Integer)
 #    puts is_prime(nb)
     end
